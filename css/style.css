@@ -146,8 +146,7 @@ nav > ul > li:hover {
 }
 #about-me > div p {
   font-size: 1.3rem;
-  word-wrap: break-word;
-  text-align: justify;
+  text-align: left;
   width: 35vw;
 }
 #about-me > div p > span:nth-child(1) {
