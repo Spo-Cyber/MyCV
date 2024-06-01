@@ -1,0 +1,458 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+section {
+  min-height: 100vh;
+}
+
+button {
+  transition: 0.3s all;
+}
+
+header {
+  width: 100%;
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 8rem;
+}
+header h1 {
+  color: #444;
+  font-weight: 500;
+  text-align: center;
+}
+
+nav > ul {
+  display: flex;
+  list-style-type: none;
+  gap: 4rem;
+  justify-content: space-between;
+}
+nav > ul > li {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s all;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+nav > ul > li:hover {
+  color: #444;
+  border-bottom-color: #333;
+}
+
+#intro {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  gap: 4rem;
+}
+#intro > * {
+  margin-top: -10vh;
+}
+#intro #my-img {
+  width: 27rem;
+  height: 25rem;
+  border-radius: 50%;
+  background-image: url("../img/1.jpg");
+  background-size: cover;
+  background-position: 0 -3rem;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.8);
+  border: 1px solid grey;
+  animation: introAnimation 1s forwards;
+}
+#intro #intro-text {
+  animation: introAnimation 1s forwards;
+  text-align: center;
+}
+#intro #intro-text > * {
+  margin-top: 0.5rem;
+}
+#intro #intro-text p {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+#intro #intro-text h2 {
+  color: #222;
+  font-size: 1.9rem;
+}
+#intro #intro-text h3 {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+#intro #intro-text > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+#intro #intro-text button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0.8rem 1rem;
+  border-radius: 2rem;
+  margin: 0.6rem 0;
+  display: inline-block;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 3px 5px rgba(128, 128, 128, 0.712);
+  margin-right: 1rem;
+  background-color: #333;
+  color: white;
+}
+#intro #intro-text button:hover {
+  transform: scale(1.05);
+}
+#intro #intro-text i {
+  font-size: 3rem;
+  cursor: pointer;
+}
+#intro #intro-text i:hover {
+  transform: scale(1.05);
+  color: rgb(66, 66, 66);
+}
+
+#about-me {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#about-me > div {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+#about-me > div p {
+  font-size: 1.3rem;
+  word-wrap: break-word;
+  text-align: justify;
+  width: 35vw;
+}
+#about-me > div p > span:nth-child(1) {
+  color: orange;
+}
+#about-me > div #about-text-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 35vw;
+}
+#about-me > div #about-text-section h4 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+}
+#about-me > div #about-text-section li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 1rem;
+  font-size: 3.1rem;
+}
+#about-me > div #about-text-section li > img {
+  width: 2.7rem;
+  height: 2.7rem;
+  margin-bottom: -0.5vh;
+}
+#about-me > div #about-text-section li[title=HTML] i {
+  color: rgb(247, 0, 0);
+}
+#about-me > div #about-text-section li[title=CSS] i {
+  color: rgb(4, 4, 246);
+}
+#about-me > div #about-text-section li[title=Sass] i {
+  color: rgb(239, 2, 120);
+}
+#about-me > div #about-text-section li[title=Javascript] i {
+  color: rgb(242, 157, 0);
+}
+#about-me > div #about-text-section li[title="React JS"] i {
+  color: rgb(20, 159, 159);
+}
+#about-me > div #about-text-section li[title="Vue JS"] i {
+  color: rgb(2, 135, 2);
+}
+#about-me #about-img {
+  width: 26rem;
+  height: 26rem;
+  border-radius: 2rem;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/2.jpg");
+}
+
+#projects {
+  min-height: 100vh;
+}
+#projects > h2 {
+  margin-bottom: 10vh;
+}
+#projects #projects-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+#projects .project {
+  width: 28rem;
+  border: 1px solid grey;
+  border-radius: 2rem;
+  padding: 1rem 0;
+}
+#projects .project .screenshot {
+  width: 26rem;
+  height: 19rem;
+  margin: auto;
+  background-size: cover;
+  border-radius: 1.5rem;
+}
+#projects .project .foodshop-screenshot {
+  background-image: url("../img/foodshop.png");
+}
+#projects .project .typing-screenshot {
+  background-image: url("../img/typingtest.png");
+}
+#projects .project .project-title {
+  text-align: center;
+  font-weight: 550;
+  font-size: 1.9rem;
+  margin: 1rem 0;
+}
+#projects .project .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+#projects .project .links > button {
+  font-weight: 600;
+  width: 8vw;
+  height: 6.5vh;
+  border-radius: 2rem;
+  background-color: white;
+  transition: 0.4s all;
+  border: 1px solid #333;
+  cursor: pointer;
+}
+#projects .project .links > button:hover {
+  background-color: #333;
+  color: white;
+}
+
+#contacts {
+  min-height: 70vh;
+}
+#contacts > div {
+  border: 2px solid #333;
+  width: 40vw;
+  border-radius: 1rem;
+  margin: 6rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 2rem 0;
+  font-size: 1.5rem;
+}
+#contacts > div span {
+  font-size: 1.2rem;
+}
+#contacts > div > p,
+#contacts > div div {
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+#contacts > div #wtv {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  justify-content: center;
+}
+#contacts > div i {
+  font-size: 1.8rem;
+}
+#contacts > div .fa-envelope {
+  color: #333;
+}
+#contacts > div .fa-whatsapp {
+  color: green;
+}
+#contacts > div .fa-viber {
+  color: purple;
+}
+#contacts > div .fa-telegram {
+  color: rgb(70, 95, 220);
+}
+#contacts > div .fa-phone {
+  color: #333;
+}
+
+footer {
+  width: 100%;
+  min-height: 30vh;
+  display: flex;
+  padding-top: 5rem;
+  flex-direction: column;
+}
+footer nav {
+  margin: 0.5rem auto;
+}
+footer p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #444;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+@keyframes introAnimation {
+  from {
+    opacity: 0.5;
+    transform: translateY(-10rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media screen and (max-width: 1000px) {
+  header {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 2rem;
+  }
+  #contacts > div {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 800px) {
+  header nav > ul {
+    gap: 1rem;
+  }
+  header nav > ul li {
+    font-size: 1.2rem;
+  }
+  #intro {
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0;
+    padding: 1rem;
+  }
+  #about-me > div {
+    flex-direction: column;
+    align-items: center;
+  }
+  #about-me > div #about-text-section {
+    width: 90vw;
+    text-align: center;
+  }
+  #about-me > div #about-text-section > p,
+  #about-me > div #about-text-section hr {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #about-img {
+    height: 30rem;
+    background-position-y: -12rem;
+  }
+  #projects > h2 {
+    margin-bottom: 2vh;
+  }
+  #projects .project .links > button {
+    width: 6rem;
+    height: 5rem;
+  }
+}
+@media screen and (max-width: 560px) {
+  header {
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  header ul {
+    width: 90vw;
+  }
+  header > h1 {
+    text-align: center;
+    text-wrap: nowrap;
+  }
+  #intro > #my-img {
+    width: 20rem;
+    height: 18rem;
+  }
+}
+@media screen and (max-width: 465px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+  #projects {
+    padding: 0 1rem;
+  }
+  #projects .project {
+    width: 23rem;
+    padding: 1rem;
+  }
+  #projects .project .screenshot {
+    width: 21rem;
+    height: 14rem;
+    background-size: cover;
+  }
+  #about-me #about-img {
+    width: 18rem;
+    height: 28rem;
+    background-position: center;
+  }
+  #contacts > div > p:first-child i {
+    font-size: 1rem;
+  }
+  #contacts > div > p:first-child span {
+    font-size: 0.9rem;
+  }
+  footer ul {
+    gap: 0.7rem;
+  }
+  footer ul li {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .heading {
+    font-size: 2rem;
+  }
+  #contacts {
+    gap: 0;
+  }
+  #contacts > div > p i,
+  #contacts > div > p span, #contacts > div div i,
+  #contacts > div div span {
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
