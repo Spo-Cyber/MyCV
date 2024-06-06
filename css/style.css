@@ -136,6 +136,7 @@ nav > ul > li:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 5rem;
 }
 #about-me > div {
   width: 100%;
@@ -363,6 +364,9 @@ footer p {
     gap: 0;
     padding: 1rem;
   }
+  #about-me {
+    gap: 2rem;
+  }
   #about-me > div {
     flex-direction: column;
     align-items: center;
@@ -451,6 +455,26 @@ footer p {
   #contacts > div > p span, #contacts > div div i,
   #contacts > div div span {
     font-size: 1rem;
+  }
+}
+@media screen and (max-width: 356px) {
+  #intro > #my-img {
+    width: 14rem;
+    height: 13rem;
+  }
+  #projects .project {
+    width: 100%;
+  }
+  #projects .project > .screenshot {
+    width: 100%;
+    object-fit: fill;
+    object-position: 100px;
+  }
+  #contacts {
+    width: 100vw;
+  }
+  #contacts > div {
+    width: 100vw;
   }
 }
 

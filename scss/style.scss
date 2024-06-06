@@ -152,6 +152,7 @@ nav>ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 5rem;    
 
     >div {
         width: 100%;
@@ -422,6 +423,9 @@ footer {
         padding: 1rem;
     }
 
+    #about-me {
+        gap: 2rem;
+    }
     #about-me>div {
         flex-direction: column;
         align-items: center;
@@ -536,4 +540,30 @@ footer {
             font-size: 1rem;
         }
     }
+}
+
+@media screen and (max-width: 356px) {
+    #intro > #my-img {
+        width: 14rem;
+        height: 13rem;
+    }
+    
+    #projects .project {
+        width: 100%;
+
+        >.screenshot {
+            width: 100%;
+            object-fit: fill;
+            object-position: 100px;
+        }
+    }
+
+    #contacts {
+        width: 100vw;
+        > div {
+            width: 100vw;
+        }
+    }
+
+    
 }
