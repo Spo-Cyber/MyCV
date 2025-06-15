@@ -27,7 +27,7 @@ document.getElementById("foodshop-github").onclick = () => window.open("https://
 document.getElementById("foodshop-host").onclick = () => window.open("https://spartakvardanyan.github.io/foodshop/", "_blank");
 document.getElementById("typingtest-github").onclick = () => window.open("https://github.com/SpartakVardanyan/typingtest", "_blank");
 document.getElementById("typingtest-host").onclick = () => window.open("https://spartakvardanyan.github.io/typingtest/", "_blank");
-document.getElementById("my-github").onclick = () => window.open("https://github.com/spartakVardanyan/", "_blank");
+document.getElementById("my-github").onclick = () => window.open("https://github.com/Spo-Cyber", "_blank");
 
 download_cv.onclick = () => {
     const a = document.createElement("a");
