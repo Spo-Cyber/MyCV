@@ -22,9 +22,11 @@ body {
     background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9)), url("../img/bg.avif");
     background-size: 15vw 30vh;
     background-repeat: repeat;
-    filter: blur(2px);
     z-index: -1;
     pointer-events: none; }
+  @media screen and (max-width: 800px) {
+    body::before {
+      background-size: 20% 20vh; } }
 
 .heading {
   font-size: 3rem;
@@ -325,7 +327,7 @@ footer {
     padding: 1rem 2rem; }
 
   #contacts > div {
-    width: 90vw; } }
+    width: 80vw; } }
 @media screen and (max-width: 800px) {
   header nav > ul {
     gap: 1rem; }
@@ -335,8 +337,12 @@ footer {
   #intro {
     flex-direction: column;
     justify-content: space-evenly;
-    gap: 0;
+    gap: 4rem;
     padding: 1rem; }
+    #intro > #my-img {
+      margin-top: 0; }
+    #intro > #intro-text {
+      margin-top: -3vh; }
 
   #about-me {
     gap: 2rem; }
@@ -361,7 +367,10 @@ footer {
 
   #projects .project .links > button {
     width: 6rem;
-    height: 5rem; } }
+    height: 5rem; }
+
+  #contacts > div {
+    width: 70vw; } }
 @media screen and (max-width: 560px) {
   header {
     justify-content: center;
