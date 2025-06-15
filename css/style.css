@@ -27,6 +27,9 @@ body {
   @media screen and (max-width: 800px) {
     body::before {
       background-size: 20% 20vh; } }
+  @media screen and (max-width: 430px) {
+    body::before {
+      background-size: 30% 20vh; } }
 
 .heading {
   font-size: 3rem;
@@ -371,7 +374,7 @@ footer {
 
   #contacts > div {
     width: 70vw; } }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 565px) {
   header {
     justify-content: center;
     align-items: center;
@@ -384,10 +387,13 @@ footer {
 
   #intro > #my-img {
     width: 20rem;
-    height: 18rem; } }
+    height: 18rem; }
+
+  #contacts > div {
+    width: 85vw; } }
 @media screen and (max-width: 465px) {
   .heading {
-    font-size: 2.5rem; }
+    font-size: 2rem; }
 
   #projects {
     padding: 0 1rem; }
@@ -398,21 +404,33 @@ footer {
         width: 21rem;
         height: 14rem;
         background-size: cover; }
+      #projects .project .project-title {
+        font-size: 1.4rem; }
 
   #about-me #about-img {
     width: 18rem;
     height: 28rem;
     background-position: center; }
 
-  #contacts > div > p:first-child i {
-    font-size: 1rem; }
-  #contacts > div > p:first-child span {
-    font-size: 0.9rem; }
+  #contacts {
+    min-height: 50vh; }
+    #contacts > div > p:first-child i {
+      font-size: 1rem; }
+    #contacts > div > p:first-child span {
+      font-size: 0.9rem; }
 
   footer ul {
     gap: 0.7rem; }
     footer ul li {
       font-size: 1rem; } }
+@media screen and (max-width: 430px) {
+  #contacts > div {
+    width: 90vw; }
+    #contacts > div span {
+      font-size: 1rem; } }
+@media screen and (max-width: 400px) {
+  #about-me > div p {
+    font-size: 1.1rem; } }
 @media screen and (max-width: 375px) {
   .heading {
     font-size: 2rem; }

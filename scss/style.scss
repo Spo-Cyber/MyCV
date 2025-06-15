@@ -34,6 +34,12 @@ body {
             background-size: 20% 20vh;
         }
     }
+
+    @media screen and (max-width: 430px) {
+        &::before {
+            background-size: 30% 20vh;
+        }
+    }
 }
 
 
@@ -521,7 +527,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 565px) {
     header {
         justify-content: center;
         align-items: center;
@@ -541,11 +547,15 @@ footer {
         width: 20rem;
         height: 18rem;
     }
+
+    #contacts > div {
+        width: 85vw;
+    }
 }
 
 @media screen and (max-width: 465px) {
     .heading {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     #projects {
@@ -560,7 +570,13 @@ footer {
                 height: 14rem;
                 background-size: cover;
             }
+
+            .project-title {
+                font-size: 1.4rem;
+            }
         }
+        
+        
     }
 
     #about-me #about-img {
@@ -569,13 +585,17 @@ footer {
         background-position: center;
     }
 
-    #contacts>div>p:first-child {
-        i {
-            font-size: 1rem;
-        }
+    #contacts {
+        min-height: 50vh;
+        
+        >div>p:first-child {
+            i {
+                font-size: 1rem;
+            }
 
-        span {
-            font-size: 0.9rem;
+            span {
+                font-size: 0.9rem;
+            }
         }
     }
 
@@ -587,6 +607,22 @@ footer {
                 font-size: 1rem;
             }
         }
+    }
+}
+
+@media screen and (max-width: 430px) {
+    #contacts > div {
+        width: 90vw;
+
+        span {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #about-me > div p {
+        font-size: 1.1rem;
     }
 }
 
