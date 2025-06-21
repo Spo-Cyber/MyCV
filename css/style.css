@@ -91,7 +91,7 @@ nav > ul {
     border-radius: 50%;
     background-image: url("../img/1.jpg");
     background-size: cover;
-    background-position: 0 -3rem;
+    background-position: 0 -7rem;
     box-shadow: 2px 2px 15px grey;
     border: 1px solid grey;
     animation: introAnimation 1s forwards; }
